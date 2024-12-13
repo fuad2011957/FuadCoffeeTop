@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+}
+
+button:active{
+    transform: scale(1);
+}
+header{
+    width: 100vw;
+    font-family: "Ubuntu", serif;
+    background-color: #deaa79;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.btn{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(../img/low-poly-grid-haikei.png);
+    width: 380px;
+    height: 100px;
+    
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+header img{
+    border-radius: 20px;
+    top: 5px;
+}
+.card_coffee img{
+    width: 290px;
+    height: 200px;
+    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.card_coffee img:hover{
+    transform: scale(1.1);
+}
+.modal-content h2{
+    color: #fff;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    border-radius: 15px;
+    background-color: #FAB12F;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: a 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+header a:hover{
+    transform: translateY(-10px);
+}
+header a:active{
+    color: #FAB12F ;
+    transform: translateY(0);
+    background-color: white;
+}
+
+.card_coffee button{
+    font-size: 17px;
+    background-color: #B1C29E;
+    border: 0;
+    outline: 0;
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: log 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.login_btn button{
+    font-size: 17px;
+    background-color: #B1C29E;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: log 1.2s cubic-bezier(0.215, 0.610, 0.355, 1); 
+}
+.main{
+    width: 100vw;
+    gap: 8px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: "Ubuntu", serif;
+    background-size: cover;
+    background-image: url(../img/blurry-gradient-haikei.png);
+}
+.card_coffee{
+    
+    background-color: #F8EDE3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin:0px 0px 0px  30px;
+    width: 290px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    border-radius: 20px;
+    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: card 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);    
+}
+.card_coffee:hover{
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#a{
+    font-size: 40px;
+    font-family: "Jaro", serif;
+}
+.a{
+    font-size: 20px
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: #603F26;
+    font-size: 20px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.header_links{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.reg{
+    font-size: 70px;
+}
+footer{
+
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Playwrite HR Lijeva", cursive;
+    height: 100px;
+    background-color: #E38E49;
+}
+
+.a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.greeting{
+    width: 100vw;
+    gap: 3px;
+    font-family: "Ubuntu", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/adrian-kubiak-15.jpg);
+    height: 470px;
+    background-size: cover;
+}
+
+.greeting h1{
+    font-family: "Nabla", system-ui;
+    color: #D8D2C2;
+}
+.FuadCoffee{
+    font-size: 60px;
+}
+.greeting button{
+    font-size: 35px;
+    background-size: cover;
+    background-image: url(../img/bg.png);
+    border: 0;
+    outline: 0;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: log 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.form form input{
+    background-color: #F8EDE3;
+    border: 0;
+    border-bottom: 2px solid #B1C29E;
+    width: 300px;
+    height: 40px;
+    
+}
+#coment{
+    width: 300px;
+    height: 40px;
+}
+.form input::placeholder{
+    font-size: 14px;
+    color: #603F26;
+    font-family: "Ubuntu", serif;
+}
+.form input:focus {
+    outline: none;
+}
+
+
+.form input::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    
+    font-size: 16px;
+    color: gray;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.form input:focus::placeholder {
+    transform: translateY(-150%);
+    font-size: 12px;
+    color: #B1C29E;
+}
+.nav{
+    height: 150px;
+    background-image: url(../img/blurry-gradient-haikei.png);
+    background-size: cover;
+}
+h1{
+    color: #603F26;
+    font-family: "Ubuntu", serif;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+#nav{
+    color: #603f26;
+    font-family: "Ubuntu", serif;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.form{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #603f26;
+    flex-direction: column;
+}
+.hh{
+    color: #B1C29E;
+}
+.card_coffee_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card_coffee_conteiner_2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+header #loginBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.header_search_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#modal .modal-content form input{
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid #795757;
+    outline: 0;
+    background-color: rgba(202, 202, 202, 0.26);
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#modal button:active{
+    transform: scale(1);
+}
+.greeting button:active{
+    transform: scale(1);
+}
+#loginBtn button:active{
+    transform: scale(1);
+}
+.card_coffee button:active{
+    transform: scale(1);
+}
+.form button:active{
+    transform: scale(1);
+}
+.login_btn button:hover{
+    transform: scale(1.2);
+}
+#modal button:hover{
+    transform: scale(1.2);
+}
+.greeting button:hover{
+    transform: scale(1.2);
+}
+#loginBtn button:hover{
+    transform: scale(1.2);   
+}
+.card_coffee button:hover{
+    transform: scale(1.2);
+}
+.form button:hover{
+    transform: scale(1.2);
+}
+#modal button{
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+.greeting button{
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+#loginBtn button{
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Playwrite HR Lijeva", cursive;
+}   
+.card_coffee button{
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+.form button{
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-container input[type="search"] {
+    width: 650px;
+    padding: 10px 15px;
+    border: 2px solid #8B4513; 
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    color: #4B2E1C;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-container input[type="search"]:focus {
+    border-color: #D2691E;
+}
+
+
+.search-container button {
+    height: 43px;
+    padding: 10px 20px;
+    background-color: #8B4513;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.search-container input{
+    animation: input 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.search-container button:hover {
+    background-color: #D2691E;
+}
+
+.search-container button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form form button{
+    font-size: 17px;
+    background-color: #B1C29E;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: log 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+#modal .modal-content form button{
+    font-size: 17px;
+    background-size: auto;
+    background-image: url(../img/bg.png);
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: log 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+#modal .modal-content form input:focus{
+    background-color: rgba(202, 202, 202, 0.507);
+}
+
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8EDE3;
+    border-radius: 15px;
+    width: 400px;
+    height: 390px;
+}
+#modal {
+    font-family: "Ubuntu", serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+#modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+  
+#modal .modal-content {
+    background-image: url(../img/bg.png);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    position: relative;
+}
+
+#modal .modal-content h2 {
+    margin-top: 0;
+}
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+@keyframes card{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes a{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes log{
+    0%{
+        transform: rotate(-100px);
+        opacity: 0;
+    }
+    100%{
+
+        transform: rotate(0px);
+        opacity: 1;
+    }
+}
+@keyframes input{
+    0%{
+        transform: scale(1.3) rotate(200deg);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.contact-container {
+    
+    background-color: #561C24;
+    background-size: cover;
+    font-family: "Ubuntu", serif;
+    width: 1326px;
+    height: 500px;
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: #6D2932;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #BBAB8C;;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #BBAB8C;;
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    background-color: #6D2932;
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.social-links {
+    margin: 10px 10px;
+}
+
+.social-links_links {
+    margin: 10px 0px 10px 0px ;
+
+}
+.map h2{
+    color: #BBAB8C;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0;
+}
+.img_star{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#img{
+    height: 20px;
+    width: 20px;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.9s ease;
+}
+
+.social-links a:hover {
+    transform:rotate(360deg);
+    background-color: #9A3B3B;
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 997px),(max-width: 821px){
+    .header_search_links .search-container button{
+        border-radius: 20px;
+    }
+    .header_search_links .search-container input{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #contacs{
+        display: none;
+    }
+}
+@media screen and (max-width: 1379px){
+    .main{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1367px){
+    .contact-container{
+       display: none;
+    }
+    .map{
+        display: none;
+    }
+}
+@media screen and (max-width: 696px){
+    .logo img{
+        display: none;
+    }
+    .login_btn button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 544px),(max-width: 376px){
+    footer{
+        font-size: 20px;
+    }
+    #order{
+        display: none;
+    }
+}
+@media screen and (max-width: 475px){
+    .greeting{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 998px){
+    .form{
+        width: 100vw;
+    }
+}
