@@ -658,17 +658,9 @@ iframe {
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 997px),(max-width: 821px){
-    .header_search_links .search-container button{
-        border-radius: 20px;
-    }
     .header_search_links .search-container input{
-        display: none;
+        width: 350px;
     }
     #about{
         display: none;
@@ -684,18 +676,83 @@ iframe {
 }
 
 @media screen and (max-width: 1367px){
-    .contact-container{
-       display: none;
+    .links a{
+        width: 40px;
+        height: 45px;
     }
-    .map{
-        display: none;
-    }
+
 }
 @media screen and (max-width: 696px){
     .logo img{
-        display: none;
+        width: 50px;
+        height: 50px;
     }
     .login_btn button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+    }
+}
+@media screen and (max-width: 603px){
+    header a{
+        width: 60px;
+        font-size: 10px;
+        display: flex;
+        text-align: center;
+    }
+    .header_search_links .search-container input{
+        width: 250px;
+        height: 30px;
+    }
+    .header_search_links .search-container button{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 434px){
+    .header_search_links .search-container input{
+        width: 150px;
+        height: 20px;
+    }
+    .header_search_links .search-container button{
+        height: 20px;
+        width: 20px;
+        font-size: 5px;
+    }
+    header .logo img{
+        display: flex;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+}
+
+
+
+@media screen and (max-width: 376px){
+    #loginBtn{
+        font-size: 10px;
+        height: 30px;
+    }
+    
+}
+@media screen and (max-width: 971px){
+    #g{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 795px){
+    .contact-info{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 703px){
+    .map{
         display: none;
     }
 }
@@ -703,9 +760,6 @@ iframe {
 @media screen and (max-width: 544px),(max-width: 376px){
     footer{
         font-size: 20px;
-    }
-    #order{
-        display: none;
     }
 }
 @media screen and (max-width: 475px){
@@ -717,4 +771,4 @@ iframe {
     .form{
         width: 100vw;
     }
-}
+}     
